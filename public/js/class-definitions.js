@@ -74,6 +74,7 @@ let earths_water_composition = 0.71;
  *
  */
 
+let club_name = 'Fight Club';
 
 /* Step 9
  *
@@ -84,6 +85,7 @@ let earths_water_composition = 0.71;
  *   male    => "male"
  *   unknown => undefined
  */
+
 
 
 /* Step 10
