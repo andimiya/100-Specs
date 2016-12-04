@@ -55,6 +55,8 @@ let sahara_animal = 'The Addax';
  *
  */
 
+ let golden_ratio = 1.61803398874;
+
 
 /* Step 7
  *
