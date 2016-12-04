@@ -65,6 +65,7 @@ let sahara_animal = 'The Addax';
  *
  */
 
+let earths_water_composition = 0.71;
 
 /* Step 8
  *
