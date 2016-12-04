@@ -105,6 +105,12 @@ let gender = {
  *
  */
 
+let princess_leia = {
+  name: 'Leia Organa',
+  money: 890,
+  age: 20,
+  gender: gender.female
+};
 
 /* Step 11
  *
@@ -117,6 +123,7 @@ let gender = {
  *   jsonformatter.curiousconcept.com => "104.28.5.70"
  *
  */
+
 
 
 /* Step 12
