@@ -45,6 +45,8 @@ let sahara_animal = 'The Addax';
  *
  */
 
+ let galilean_moons = ['io', 'europa', 'ganymede', 'callisto'];
+
 
 /* Step 6 φ
  *
