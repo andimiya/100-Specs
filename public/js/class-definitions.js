@@ -5,7 +5,7 @@
  *
  */
 
-var unicorn = null;
+let unicorn = null;
 
 
 /* Step 2
@@ -15,6 +15,7 @@ var unicorn = null;
  *
  */
 
+let videogame_system = 'Atari';
 
 /* Step 3
  *
