@@ -24,6 +24,7 @@ let videogame_system = 'Atari';
  *
  */
 
+let sahara_animal = 'The Addax';
 
 /* Step 4
  *
@@ -32,6 +33,8 @@ let videogame_system = 'Atari';
  * each planet in our solar system, in order of distance from the sun
  * Capitalize the names.
  */
+
+ let planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
 
 /* Step 5
