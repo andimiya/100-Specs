@@ -243,7 +243,7 @@ let DNA = [
  */
 
  let laptopCosts = {
-  Macbook: 1500,
+  MacBook: 1500,
   Alienware: 2500,
   HP: 499,
   Surface: 320
@@ -265,6 +265,15 @@ let DNA = [
  *
  */
 
+let livingOrganismClassification = [
+ "Kingdom",
+ "Phylum",
+ "Class",
+ "Order",
+ "Family",
+ "Genus",
+ "Species",
+];
 
 /* Step 18
  *
