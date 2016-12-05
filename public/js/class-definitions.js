@@ -288,6 +288,13 @@ let livingOrganismClassification = [
  *
  */
 
+let scmList = [
+  "git",
+  "svn",
+  "mercurial",
+  "bazaar",
+  "cvs"
+];
 
 /* Step 19
  *
