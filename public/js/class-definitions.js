@@ -363,6 +363,15 @@ function addNumbers(numOne, numTwo){
  *
  */
 
+ function installLinux(linuxType){
+  if (linuxFlavors.indexOf(linuxType) > -1) {
+    return true;
+  }
+  else {
+    return false;
+  }
+ }
+
 
 /* Step 23
  *
