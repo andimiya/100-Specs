@@ -199,6 +199,14 @@ let rainbow = {
  *
  */
 
+let linuxFlavors = [
+  "Gentoo",
+  "Fedora",
+  "Debian",
+  "Slackware",
+  "Red Hat",
+  "Bieber Linux"
+];
 
 /* Step 15
  *
@@ -212,6 +220,14 @@ let rainbow = {
  * "cytosine"
  *
  */
+
+let DNA = [
+ "nucleatides",
+ "guanine",
+ "adenine",
+ "thymine",
+ "cytosine"
+];
 
 
 /* Step 16
