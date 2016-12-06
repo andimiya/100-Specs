@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /* Step 1
  *
  * Declare a variable named "unicorn"
@@ -391,6 +393,30 @@ function addNumbers(numOne, numTwo){
  *
  */
 
+function drink(beerName){
+    if (beers.hasOwnProperty(beerName)){
+      if ((typeof beers[beerName]) === 'string') {
+        return (`This ${beerName} is ${beers[beerName]}.`);
+      }
+      else {
+        return (`This ${beerName} is ${beers[beerName][0]} and ${beers[beerName][1]}.`);
+      }
+    }
+    else {
+      return false;
+    }
+
+}
+
+
+// let beers = {
+//   IPA: "Ale",
+//   Lager: "Strong",
+//   Heffeweisen: "German",
+//   Stout: ["Thick", "Dark"],
+//   Porter: "Bitter",
+//   Ale: ["Light", "Golden"]
+// };
 
 /* Step 24
  *
