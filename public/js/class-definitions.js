@@ -428,17 +428,6 @@ function browseURL(browser) {
   }
 }
 
-
-// let browsers = {
-//   Chromium: "google.com",
-//   Safari: "apple.com",
-//   Opera: "opera.com",
-//   Firefox: "mozilla.org",
-//   Sleipnir: "fenrir-inc.com",
-//   Konqueror: "konqueror.org"
-//  };
-
-
 /* Step 25
  *
  * Define a function named "listLivingOrgClass" that
@@ -448,6 +437,14 @@ function browseURL(browser) {
  * @return {String}
  *
  */
+
+function listLivingOrgClass () {
+  var stringOrg = [];
+  for (i = 0; i < livingOrganismClassification.length; i++) {
+    stringOrg.push(("<li>"+ livingOrganismClassification[i] + "</li>"));
+  }
+  return ("<ul>" + stringOrg.join('') + "</ul>");
+}
 
 
 /* Step 26
