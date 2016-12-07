@@ -547,6 +547,12 @@ function purchaseLaptop(laptop){
  *
  */
 
+function canTalkAbout(club){
+if(club_name.indexOf(club) > -1){
+  return false;
+}
+  return true;
+}
 
 /* Step 30
  *
