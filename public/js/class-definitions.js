@@ -743,7 +743,12 @@ var Stapler = function(color, maxPapers){
 };
 
 Stapler.prototype.staplePapers = function(numberPapers){
-  // if(){}
+  if(numberPapers <= this.maxPapers){
+    return true;
+  }
+  else{
+    return false;
+  }
 };
 
 /* Step 35
