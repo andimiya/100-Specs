@@ -1264,6 +1264,14 @@ Animal.prototype.isWarmBlooded = function(){
  *
  */
 
+ Vehicle.prototype.drive = function(streetName){
+  if (streetName !== "" && typeof(streetName) === 'string'){
+    return `Driving on ${streetName}`;
+  }
+  else {
+    return 'Driving forward';
+  }
+};
 
  /* Step 83
  *
