@@ -575,6 +575,13 @@ if(club_name.indexOf(club) > -1){
  *
  */
 
+var Pen = function(color){
+  this.color = color;
+};
+
+Pen.prototype.write = function(message){
+  return `${this.color}: ${message}`;
+};
 
 /* Step 31
  *
