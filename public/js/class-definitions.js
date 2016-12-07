@@ -1106,7 +1106,7 @@ class Box{
 
 class Door {
   constructor(isOpen){
-    this.isOpen = true;
+    this.isOpen = isOpen;
   }
 }
 
@@ -1199,7 +1199,7 @@ var christmasPresent = new Box('present', false);
 
 // Create 2 doors
 var automaticDoor = new Door(true);
-var bankVault;
+var bankVault = new Door(false);
 
 // Create 2 shoes
 var rubySlippers;
