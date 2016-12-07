@@ -501,6 +501,20 @@ function listLivingOrgClass () {
  *
  */
 
+class Person {
+  constructor (name, money, age, gender) {
+    this.name = name;
+    this.money = money;
+    this.age = age;
+    this.gender = gender;
+  }
+  spendMoney(moneyAmount){
+    this.money -= moneyAmount;
+  }
+  earnMoney(moneyAmount){
+    this.money += moneyAmount;
+  }
+}
 
 /* Step 28
  *
