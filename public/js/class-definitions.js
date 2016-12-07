@@ -768,7 +768,8 @@ Stapler.prototype.staplePapers = function(numberPapers){
  * adds it to the discoveries property. Return back the contents of the discoveries
  * property as a String made up of all the elements found see below
  *
- * examples:
+// Scientist.
+ /* examples:
  * ["Gravity"] will be returned as:
  * "I discovered Gravity."
  *
@@ -791,6 +792,42 @@ Stapler.prototype.staplePapers = function(numberPapers){
  */
 
 
+var Scientist = function(name, money, age, gender, disciplines, discoveries){
+  Person.call(this, name, money, age, gender, disciplines, discoveries);
+    this.disciplines = [];
+    this.discoveries = [];
+};
+
+
+Scientist.prototype = Object.create(Person.prototype);
+Scientist.prototype.constructor = Scientist;
+
+
+Scientist.prototype.addDiscipline = function(addDisciplineParameter){
+  this.disciplines.push(addDisciplineParameter);
+  return this.disciplines;
+};
+
+Scientist.prototype.checkDiscipline = function(checkDiscplineParameter){
+  if(this.disciplines.indexOf(checkDiscplineParameter) > -1){
+    return true;
+  }
+  else {
+    return false;
+  }
+};
+Scientist.prototype.addDiscovery = function(addDiscoveryParameter){
+  this.discoveries.push(addDiscoveryParameter);
+  if(this.discoveries.length === 1) {
+    return `I discovered ${this.discoveries[0]}.`;
+  }
+  if (this.discoveries.length === 2) {
+    return `I discovered ${this.discoveries[0]} and ${this.discoveries[1]}.`;
+  }
+  if (this.discoveries.length === 3) {
+    return `I discovered ${this.discoveries[0]}, ${this.discoveries[1]}, and ${this.discoveries[2]}.`;
+  }
+};
 /* Step 36
  *
  * Define an ES5 class named "BankAccount" that has properties
