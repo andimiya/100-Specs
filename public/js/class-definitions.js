@@ -528,6 +528,12 @@ class Person {
  *
  */
 
+function purchaseLaptop(laptop){
+  if(laptopCosts.hasOwnProperty(laptop)) {
+    return laptopCosts[laptop].toString();
+  }
+  return -1;
+}
 
 /* Step 29
  *
