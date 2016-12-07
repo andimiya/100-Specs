@@ -828,6 +828,7 @@ Scientist.prototype.addDiscovery = function(addDiscoveryParameter){
     return `I discovered ${this.discoveries[0]}, ${this.discoveries[1]}, and ${this.discoveries[2]}.`;
   }
 };
+
 /* Step 36
  *
  * Define an ES5 class named "BankAccount" that has properties
@@ -848,6 +849,21 @@ Scientist.prototype.addDiscovery = function(addDiscoveryParameter){
  *   rob
  *
  */
+
+ var BankAccount = function(balance, owner){
+  this.balance = balance;
+  this.owner = owner;
+ };
+ BankAccount.prototype.withdraw = function(){
+
+ };
+ BankAccount.prototype.deposit = function(){
+
+ };
+ BankAccount.prototype.rob = function(){
+
+ };
+
 
 
 /* Step 37
@@ -1022,6 +1038,12 @@ Scientist.prototype.addDiscovery = function(addDiscoveryParameter){
  * @param {string} gender  male or female
  */
 
+class Animal {
+  constructor(species, gender){
+    this.species = species;
+    this.gender = gender;
+  }
+}
 
 /**
  * Step 51
