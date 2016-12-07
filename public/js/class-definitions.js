@@ -1090,10 +1090,10 @@ class Shape {
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
 
-class Box {
+class Box{
   constructor(contents, isOpen){
     this.contents = contents;
-    this.isOpen = true;
+    this.isOpen = isOpen;
   }
 }
 
@@ -1194,11 +1194,11 @@ var square = new Shape(4);
 var hexagon = new Shape(6);
 
 // Create 2 boxes
-var catBox;
-var christmasPresent;
+var catBox = new Box(new Animal ('Cat', 'male'), true);
+var christmasPresent = new Box('present', false);
 
 // Create 2 doors
-var automaticDoor;
+var automaticDoor = new Door(true);
 var bankVault;
 
 // Create 2 shoes
