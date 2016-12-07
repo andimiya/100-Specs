@@ -501,20 +501,19 @@ function listLivingOrgClass () {
  *
  */
 
-class Person {
-  constructor (name, money, age, gender) {
-    this.name = name;
-    this.money = money;
-    this.age = age;
-    this.gender = gender;
-  }
-  spendMoney(moneyAmount){
-    this.money -= moneyAmount;
-  }
-  earnMoney(moneyAmount){
-    this.money += moneyAmount;
-  }
+function Person(name, money, age, gender) {
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
 }
+
+Person.prototype.spendMoney = function(moneyAmount){
+  this.money -= moneyAmount;
+};
+Person.prototype.earnMoney = function(moneyAmount){
+  this.money += moneyAmount;
+};
 
 /* Step 28
  *
@@ -691,6 +690,35 @@ SolarSystem.prototype.removePlanet = function(){
  */
 
 
+var PrincessLeia = function (name, money, age, gender) {
+  Person.call(this, name, money, age, gender);
+  this.isInTrouble = null;
+};
+
+PrincessLeia.prototype = Object.create(Person.prototype);
+PrincessLeia.prototype.constructor = PrincessLeia;
+
+
+PrincessLeia.prototype.shootsGun = function(){
+  this.isInTrouble = false;
+  return "Leia shoots her gun wildly";
+};
+PrincessLeia.prototype.getsInTrouble = function(){
+  this.isInTrouble = true;
+  return "Help me Obi-wan Kenobi, you're my only hope";
+};
+PrincessLeia.prototype.marries = function(loveInterest){
+  if(loveInterest === 'Han Solo'){
+    return true;
+  }
+  else if(loveInterest === 'Luke Skywalker'){
+    return 'Gross!';
+  }
+  else {
+    return false;
+  }
+};
+
 /* Step 34
  *
  * Define an ES5 class named "Stapler" with properties "color"
@@ -709,6 +737,14 @@ SolarSystem.prototype.removePlanet = function(){
  *
  */
 
+var Stapler = function(color, maxPapers){
+  this.color = color;
+  this.maxPapers = maxPapers;
+};
+
+Stapler.prototype.staplePapers = function(numberPapers){
+  // if(){}
+};
 
 /* Step 35
  *
