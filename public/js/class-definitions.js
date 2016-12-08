@@ -1100,10 +1100,8 @@ function Box(contents, isOpen){
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 
-class Door {
-  constructor(isOpen){
-    this.isOpen = isOpen;
-  }
+function Door (isOpen) {
+  this.isOpen = isOpen;
 }
 
 /**
@@ -1336,6 +1334,17 @@ Box.prototype.openBox = function(){
  * Return true if openClose opens the door, false if openClose closes the door.
  *
  */
+
+ Door.prototype.openClose = function(){
+  if(this.isOpen !== true){
+    this.isOpen = true;
+    return true;
+  }
+  else {
+    this.isOpen = false;
+    return false;
+  }
+ };
 
 
 /* Step 86
