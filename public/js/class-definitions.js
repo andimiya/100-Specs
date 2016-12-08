@@ -1367,6 +1367,15 @@ Shoe.prototype.findShoes = function(){
  *
  */
 
+House.prototype.isATallStory = function(storiesTooTall){
+  this.storiesTooTall = storiesTooTall;
+  if(this.stories >= this.storiesTooTall){
+    return true;
+  }
+  else {
+    return false;
+  }
+};
 
  /* Step 88
  *
