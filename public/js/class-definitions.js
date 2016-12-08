@@ -1354,6 +1354,9 @@ Box.prototype.openBox = function(){
  *
  */
 
+Shoe.prototype.findShoes = function(){
+  return `Found ${this.color} shoes of size ${this.size}`;
+};
 
  /* Step 87
  *
