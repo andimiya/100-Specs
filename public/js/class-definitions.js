@@ -1475,9 +1475,8 @@ var notWarmOrColdAnimal = new Animal ('Llama', 'male').isWarmBlooded();
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
-
+var streetDriving = new Vehicle('Kia', 'Optima').drive('Woodlawn');
+var forwardDriving = new Vehicle('Mini', 'Cooper').drive('');
 
  /* Step 93
  *
