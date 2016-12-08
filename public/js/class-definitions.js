@@ -1494,8 +1494,8 @@ var polygon = new Shape('bird').getType();
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
+var openAClosedBox = new Box('presents', false).openBox(true);
+var closeAnOpenBox = new Box ('coal', true).openBox(false);
 
 
  /* Step 95
