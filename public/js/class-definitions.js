@@ -1484,8 +1484,8 @@ var forwardDriving = new Vehicle('Mini', 'Cooper').drive('');
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
+var decagon = new Shape(10).getType();
+var polygon = new Shape('bird').getType();
 
 
 /* Step 94
