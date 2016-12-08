@@ -1504,8 +1504,8 @@ var closeAnOpenBox = new Box ('coal', true).openBox(false);
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor;
-var closeAnOpenDoor;
+var openAClosedDoor = new Door(false).openClose(true);
+var closeAnOpenDoor = new Door(true).openClose(false);
 
 
 /* Step 96
