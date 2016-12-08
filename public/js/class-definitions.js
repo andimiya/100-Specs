@@ -1088,11 +1088,9 @@ function Shape (sides){
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
 
-class Box{
-  constructor(contents, isOpen){
+function Box(contents, isOpen){
     this.contents = contents;
     this.isOpen = isOpen;
-  }
 }
 
 /**
@@ -1321,6 +1319,15 @@ Shape.prototype.getType = function(){
  *
  */
 
+Box.prototype.openBox = function(){
+// console.log(this.isOpen !== true) ;
+  if(this.isOpen !== true){
+    return this.isOpen = true;
+  }
+  else {
+    return false;
+  }
+};
 
  /* Step 85
  *
