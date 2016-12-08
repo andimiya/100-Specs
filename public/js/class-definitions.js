@@ -1534,8 +1534,8 @@ var shortStory = new House(1).isATallStory(5);
  * and assign the values to each variable below.
  *
  */
-var kitchenLightsOn;
-var porchLightsOff;
+var kitchenLightsOn = new Lightbulb('off').flipSwitch('on');
+var porchLightsOff = new Lightbulb('off').flipSwitch('off');
 
 
  /* Step 99
